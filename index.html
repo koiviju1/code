@@ -3,15 +3,14 @@
 <head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">     
-		<!--43436228-9c32-4023-9753-48e0170e642f--><!--"https://spablobstorage.blob.core.windows.net/test-container/index.html"-->
-
 </head>
 
 <body ng-app="SpaTestMain" ng-controller="homeCtrl">
 		<div class="row" style="text-align: center;">
-			<br><h1>Norian Accounting archive solution</h1><br>
-			<p>Du har låggat in</p><br>
-			<button ng-show="userInfo.isAuthenticated" ng-click="logout()">Logout</button>
+			<br><h1>Azure archives authentication page</h1><br>
+			<p>Fill in Azure authentication id</p>
+			<input type="text" ng-model="authId" />
+			<button ng-click="login()">Login</button>
 		<div>
 			
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
