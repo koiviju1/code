@@ -18,7 +18,7 @@ angular.module('SpaTestMain', ['ngRoute','AdalAngular'])
         {
             instance: 'https://login.microsoftonline.com/', 
             tenant: 'opuscapita.onmicrosoft.com',
-            clientId: 'c668d87c-bad1-49eb-8bc8-97133cd801e1',
+            clientId: '43436228-9c32-4023-9753-48e0170e642f',
             popUp: false,
             cacheLocation: 'localStorage', // enable this for IE, as sessionStorage does not work for localhost.
         },
