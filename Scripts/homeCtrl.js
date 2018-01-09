@@ -8,19 +8,19 @@ angular.module('SpaTestMain')
     $scope.logout = function () {
         adalService.logOut();
     };
+	
+	var href = 'https://login.microsoftonline.com/common/oauth2/authorize?response_type=token&client_id=';
+		href += $scope.authID + '&resource=https://webdir.online.lync.com&redirect_uri=' + window.location.href;
+		window.location.href = href;
 		
 	$scope.loginWithClientId = function(){
 		var id = $scope.authId;
 		var config = {
 			clientId: id,
-			redirectUri: 'https://archive-main.azurewebsites.net/main.html'
-			};
-			alert("pöö");
-			//adalService.login();
+			//redirectUri: 'https://archive-main.azurewebsites.net/main.html'
+			};	
 		var auth = new adalService.AuthorizationContext(config);
 		auth.login();
 	};
-	/*var href = 'https://login.microsoftonline.com/common/oauth2/authorize?response_type=token&client_id=';
-	href += client_id + '&resource=https://webdir.online.lync.com&redirect_uri=' + window.location.href;
-	window.location.href = href;*/
+		
 }]);
