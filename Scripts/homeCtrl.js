@@ -18,6 +18,7 @@ angular.module('SpaTestMain')
 		var config = {
 			clientId: id,
 			//redirectUri: 'https://archive-main.azurewebsites.net/main.html'
+			redirectUri: href
 			};	
 		var auth = new adalService.AuthorizationContext(config);
 		auth.login();
