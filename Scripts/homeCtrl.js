@@ -17,8 +17,8 @@ angular.module('SpaTestMain')
 		var id = $scope.authId;
 		var config = {
 			clientId: id,
-			//redirectUri: 'https://archive-main.azurewebsites.net/main.html'
-			redirectUri: href
+			redirectUri: 'https://archive-main.azurewebsites.net/main.html'
+			
 			};	
 		var auth = new adalService.AuthorizationContext(config);
 		auth.login();
