@@ -1,7 +1,7 @@
 'use strict';
 angular.module('SpaTestMain', ['ngRoute','AdalAngular'])
 .config(['$routeProvider', '$httpProvider', 'adalAuthenticationServiceProvider', function ($routeProvider, $httpProvider, adalProvider) {
-
+/*
     $routeProvider.when("/Home", {
         controller: "homeCtrl",
         templateUrl: "/Views/Home.html", // modaa tätä!
@@ -12,7 +12,7 @@ angular.module('SpaTestMain', ['ngRoute','AdalAngular'])
     }).when("/UserData", {
         controller: "userDataCtrl",
         templateUrl: "/Views/UserData.html",
-    }).otherwise({ redirectTo: "/Home" });
+    }).otherwise({ redirectTo: "/Home" });*/
 
     adalProvider.init(
         {
