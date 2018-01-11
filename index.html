@@ -5,25 +5,22 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">     
 </head>
 
-<body ng-app="SpaTestMain" ng-controller="homeCtrl">
-		<div class="row" style="text-align: center;">
-			<br><h1>Azure archives authentication page</h1><br>
+<body ng-app="SpaTestMain" >
+		<div class="row" style="text-align: center;" ng-controller="homeCtrl">
+			<br><h1>Norian Accountin archives solution<br>authentication page</h1><br>
 			<p>Fill in Azure authentication id</p>
 			<input type="text" ng-model="authId" />
 			<button ng-click="loginWithClientId()">Login</button>
-		<div>
-			
+		</div>
+		
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
 			<script src="https://code.angularjs.org/1.2.25/angular-route.js"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+			<script src="Scripts/app.js"></script>
 			<script src="Scripts/adal.js"></script>
 			<script src="Scripts/adal-angular.js"></script>
-			<script src="Scripts/app.js"></script>
 			<script src="Scripts/homeCtrl.js"></script>
-			<script src="Scripts/userDataCtrl.js"></script>
-			<script src="Scripts/todoListCtrl.js"></script>
-			<script src="Scripts/todoListSvc.js"></script>
-		
+
 </body>
 </html>

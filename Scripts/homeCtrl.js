@@ -1,22 +1,13 @@
-﻿'use strict';
-angular.module('SpaTestMain')
-.controller('homeCtrl', ['$scope', 'adalAuthenticationService', function ($scope, adalService) {
-    $scope.login = function () {
-        adalService.login();
-    };
-	
-    $scope.logout = function () {
-        adalService.logOut();
-    };
-	
+﻿var app = angular.module('SpaTestMain');
+app.controller('homeCtrl', ['$scope', 'adalAuthenticationService', function ($scope, adalService) {
+
 	$scope.loginWithClientId = function(){
 		var id = $scope.authId;
-		var config = {
-			clientId: id,
-			redirectUri: 'https://archive-main.azurewebsites.net/main.html'			
-			};	
-		var auth = new adalService.AuthorizationContext(config);
-		auth.login();
-	};
-		
+		var config = {};	    
+		var auth = new AuthenticationContext(config);
+		if (id == auth.config.clientId){
+			auth.login();
+		}
+		else alert("Id is not valid");
+	};	
 }]);
