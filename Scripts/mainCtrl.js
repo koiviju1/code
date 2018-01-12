@@ -86,7 +86,7 @@ mainApp.controller('mainCtrl', function($scope, $location){
 	
 	// nappulaa kun painetaan tekee näin. korvataan logoutilla.
 	$scope.placeholder = function(){
-		alert("moi. ");
+		
 	};
 	
 });

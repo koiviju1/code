@@ -1,6 +1,15 @@
 'use strict';
 angular.module('SpaTestMain',['ngRoute','AdalAngular']).config(['$routeProvider', '$httpProvider', 'adalAuthenticationServiceProvider', function ($routeProvider, $httpProvider, adalProvider) {
 
+		$routeProvider.when("/", {
+			controller: "homeCtrl",
+			templateUrl: "/index.html",
+		}).when("/main", {
+			controller: "mainCtrl",
+			templateUrl: "/main.html",
+			requireADLogin: true,
+		}).otherwise({ redirectTo: "/" });
+		
 	    adalProvider.init(
         {
 			tenant: 'opuscapita.onmicrosoft.com',
