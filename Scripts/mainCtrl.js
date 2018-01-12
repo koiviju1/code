@@ -1,9 +1,10 @@
 'use strict';
 var mainApp = angular.module('SpaTestMain');
-mainApp.controller('mainCtrl', function($scope){
+mainApp.controller('mainCtrl', function($scope, $location){
 	
     var container = 'spablobstorage';
-    var sas	= '?sv=2017-04-17&ss=b&srt=sco&sp=rwdlac&se=2018-01-11T21:00:23Z&st=2018-01-11T13:00:23Z&spr=https&sig=kT6F2KJ85fo%2FmNbfUJlpJ%2BxRig2x1WeFKqmyz5RCLhU%3D';
+    //var clientId = $location.query();
+	var sas = "?sv=2017-04-17&ss=b&srt=sco&sp=rwdlac&se=2018-01-12T15:19:46Z&st=2018-01-12T07:19:46Z&spr=https&sig=2kdhYKcmkNaiuPfA9nuLLOQHoshWd5pVqbobQYAE1Bg%3D";
 
 	var checkParameters = function () {
 		if (container === null || container.length < 1) {
@@ -19,6 +20,7 @@ mainApp.controller('mainCtrl', function($scope){
     };
 	
 	var getBlobService = function () {
+		
         if (!checkParameters()) return null;
 		var blobUri = 'https://'+ container +'.blob.core.windows.net/';
         //var blobUri = 'https://' + $scope.storageAccount + '.blob.core.windows.net/';
