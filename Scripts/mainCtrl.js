@@ -1,9 +1,9 @@
 'use strict';
 var mainApp = angular.module('SpaTestMain');
-mainApp.controller('mainCtrl', function ($scope) {
+mainApp.controller('mainCtrl', function ($scope, $location) {
 	
     var storage = 'spablobstorage';
-    //var clientId = $location.fragment();
+    var token_id = $location.fragment();
 	
 	var sas = "?sv=2017-04-17&ss=b&srt=sco&sp=rwdlac&se=2018-01-18T15:51:49Z&st=2018-01-18T07:51:49Z&spr=https&sig=lXjUZgXuMkd0EpRnCJwME0AOlERffWj5MGh2kgtx5Ns%3D";
 
@@ -18,19 +18,19 @@ mainApp.controller('mainCtrl', function ($scope) {
 		}
 	
 		else return true;
-    };
+        };
 	
 	var getBlobService = function () {
 		
-        if (!checkParameters()) return null;
-		var blobUri = 'https://'+ storage +'.blob.core.windows.net/';
-        //var blobUri = 'https://' + $scope.storageAccount + '.blob.core.windows.net/';
-        //var sas = $scope.sasToken;
-		
-		alert(blobUri + sas); // tähän asti ok!
-        var blobService = AzureStorage.createBlobServiceWithSas(blobUri, sas).withFilter(new AzureStorage.ExponentialRetryPolicyFilter());
-        return blobService;
-    };
+            if (!checkParameters()) return null;
+                    var blobUri = 'https://'+ storage +'.blob.core.windows.net/';
+            //var blobUri = 'https://' + $scope.storageAccount + '.blob.core.windows.net/';
+            //var sas = $scope.sasToken;
+
+            alert(blobUri + sas); // tähän asti ok!
+            var blobService = AzureStorage.createBlobServiceWithSas(blobUri, sas).withFilter(new AzureStorage.ExponentialRetryPolicyFilter());
+            return blobService;
+        };
 	
 	var refreshContainer = function () {
 		var blobService = getBlobService();

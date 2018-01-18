@@ -1,11 +1,11 @@
-﻿var app = angular.module('SpaTestMain');
+var app = angular.module('SpaTestMain');
 app.controller('homeCtrl', ['$scope', 'adalAuthenticationService', function ($scope, adalService) {
 
 	$scope.loginWithClientId = function(){
 		var id = $scope.authId;
 		var config = {};	    
 		var auth = new AuthenticationContext(config);
-		if (id == auth.config.clientId){
+		if (id === auth.config.clientId){
 			auth.login();
 		}
 		else alert("Id is not valid");
