@@ -2,7 +2,7 @@
 angular.module('SpaTestMain',['ngRoute','AdalAngular']).config(['$routeProvider', '$httpProvider', 'adalAuthenticationServiceProvider', function ($routeProvider, $httpProvider, adalProvider) {
 
 	$routeProvider.when("/", {
-			controller: "/Scripts/mainCtrl.js",
+			controller: "/Scripts/homeCtrl.js",
 			templateUrl: "/index.html",
 	}).when("/Main", {
 			controller: "/Scripts/mainCtrl.js",
