@@ -1,9 +1,9 @@
 'use strict';
 var mainApp = angular.module('SpaTestMain');
-mainApp.controller('mainCtrl', function ($scope, $location) {
+mainApp.controller('mainCtrl', function ($scope) {
 	
     var storage = 'spablobstorage';
-    var token_id = $location.fragment();
+    //var token_id = $location.fragment();
 	
 	var sas = "?sv=2017-04-17&ss=b&srt=sco&sp=rwdlac&se=2018-01-18T15:51:49Z&st=2018-01-18T07:51:49Z&spr=https&sig=lXjUZgXuMkd0EpRnCJwME0AOlERffWj5MGh2kgtx5Ns%3D";
 
@@ -63,9 +63,9 @@ mainApp.controller('mainCtrl', function ($scope, $location) {
 						'<button class="btn btn-xs btn-success" onclick="viewContainer(\'', container.name, '\')">Select</button>', '</td>',
 						'</tr>');
 				}
-				alert("refreshContainer after loop");               
+               
 				var k = '<table class="table table-condensed table-bordered">' + output.join('') + '</table>';
-				if (k.length != 1) {
+				if (k.length !== 1) {
 					$scope.containers = "";
 					angular.element(document.body).append(k);
 				} else {
@@ -82,11 +82,10 @@ mainApp.controller('mainCtrl', function ($scope, $location) {
 	var initialize = function(){
 		showContainers();
 	};
-	// toimii
+	
 	initialize();
 	
-	// nappulaa kun painetaan tekee näin. korvataan logoutilla.
-	$scope.placeholder = function(){
+	$scope.logout = function(){
 		
 	};
 	
