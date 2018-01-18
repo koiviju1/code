@@ -17,7 +17,7 @@ angular.module('SpaTestMain',['ngRoute','AdalAngular']).config(['$routeProvider'
 			redirectUri: 'https://archive-main.azurewebsites.net/Main/main.html',
 			instance: 'https://login.microsoftonline.com/', 
             popUp: false,
-            //cacheLocation: 'localStorage'
+            cacheLocation: 'localStorage'
         },
         $httpProvider
         );
