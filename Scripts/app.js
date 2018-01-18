@@ -4,11 +4,11 @@ angular.module('SpaTestMain',['ngRoute','AdalAngular']).config(['$routeProvider'
 		$routeProvider.when("/", {
 			controller: "homeCtrl",
 			templateUrl: "/index.html",
-		}).when("/main", {
+		}).when("/", {
 			controller: "mainCtrl",
 			templateUrl: "/main.html",
 			requireADLogin: true,
-		}).otherwise({ redirectTo: "/" });
+		}).otherwise({ redirectTo: "/main.html" });
 		
 	    adalProvider.init(
         {
