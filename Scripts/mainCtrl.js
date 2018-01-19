@@ -1,6 +1,6 @@
 'use strict';
 var mainApp = angular.module('SpaTestMain');
-mainApp.controller('mainCtrl', function ($scope) {
+mainApp.controller('mainCtrl', function ($scope, $location) {
 	
     var storage = 'spablobstorage';
     //var token_id = $location.fragment();
@@ -80,7 +80,8 @@ mainApp.controller('mainCtrl', function ($scope) {
     }
 	
 	var initialize = function(){
-		showContainers();
+            alert($location.hash());
+            showContainers();
 	};
 	
 	initialize();
