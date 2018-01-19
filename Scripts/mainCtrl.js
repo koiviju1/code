@@ -5,7 +5,7 @@ mainApp.controller('mainCtrl', function ($scope, $location) {
     var storage = 'spablobstorage';
     //var token_id = $location.fragment();
 	
-	var sas = "?sv=2017-04-17&ss=b&srt=sco&sp=rwdlac&se=2018-01-18T15:51:49Z&st=2018-01-18T07:51:49Z&spr=https&sig=lXjUZgXuMkd0EpRnCJwME0AOlERffWj5MGh2kgtx5Ns%3D";
+	var sas = $location.hash();
 
 	var checkParameters = function () {
 		if (storage === null || storage.length < 1) {
