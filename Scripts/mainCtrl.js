@@ -1,11 +1,10 @@
 'use strict';
 var mainApp = angular.module('SpaTestMain');
 mainApp.controller('mainCtrl', function ($scope, $location) {
-	
-    var storage = 'spablobstorage';
-    //var token_id = $location.fragment();
-	
-	var sas = $location.hash();
+        var uriuri = $location.absUrl();
+        alert(uriuri.substring(uriuri.indexOf("id_token=")+"id_token=".length,uriuri.indexOf("&state")));
+        var storage = 'spablobstorage';
+	var sas = uriuri.substring(uriuri.indexOf("id_token=")+"id_token=".length,uriuri.indexOf("&state"));
 
 	var checkParameters = function () {
 		if (storage === null || storage.length < 1) {
@@ -80,9 +79,7 @@ mainApp.controller('mainCtrl', function ($scope, $location) {
     }
 	
 	var initialize = function(){
-            var uriuri = $location.absUrl();
-            alert(uriuri.substring(uriuri.indexOf("id_token=")+"id_token=".length,uriuri.indexOf("&state")));
-            showContainers();
+           showContainers();
 	};
 	
 	initialize();
