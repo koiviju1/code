@@ -1,6 +1,6 @@
 'use strict';
 var mainApp = angular.module('SpaTestMain');
-mainApp.controller('mainCtrl', function ($scope, $location) {
+mainApp.controller('mainCtrl', function ($scope, $location, AzureStorage) {
         var uriuri = $location.absUrl();
         alert(uriuri.substring(uriuri.indexOf("id_token=")+"id_token=".length,uriuri.indexOf("&state")));
         var storage = 'spablobstorage';
