@@ -1,5 +1,5 @@
 var app = angular.module('SpaTestMain');
-app.controller('homeCtrl', ['$scope', 'adalAuthenticationService', function ($scope, adalService) {
+app.controller('homeCtrl', ['$scope', 'adalAuthenticationService', function ($scope) {
 
 	$scope.loginWithClientId = function(){
 		var id = $scope.authId;

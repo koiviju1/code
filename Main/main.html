@@ -3,17 +3,6 @@
 <head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">     
-</head>
-
-<body ng-app="SpaTestMain" ng-controller="mainCtrl">
-		<div class="row" style="text-align: center;">
-			<br><h1>Norian Accounting archive solution</h1><br>
-			<p>You are now logged in</p><br>
-			{{containers}}<br>
-			{{results}}<br>
-			<button ng-click="logout()">Logout</button>
-		</div>
-			
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
 			<script src="https://code.angularjs.org/1.2.25/angular-route.js"></script>
@@ -24,5 +13,15 @@
 			<script src="../Scripts/mainCtrl.js"></script>
 			<script src="../Scripts/azure-storage/azure-storage.common.js"></script>
 			<script src="../Scripts/azure-storage/azure-storage.blob.js"></script>
+</head>
+
+<body ng-app="SpaTestMain" ng-controller="mainCtrl">
+		<div class="row" style="text-align: center;">
+			<br><h1>Norian Accounting archive solution</h1><br>
+			<p>You are now logged in</p><br>
+			{{containers}}<br>
+			{{results}}<br>
+			<button ng-click="logout()">Logout</button>
+		</div>
 </body>
 </html>
