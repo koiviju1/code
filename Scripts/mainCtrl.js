@@ -1,6 +1,5 @@
 'use strict';
-var mainApp = angular.module('SpaTestMain');
-mainApp.controller('mainCtrl', function ($scope, $location, AzureStorage) {
+angular.module('SpaTestMain').controller('mainCtrl', function ($scope, $location) {
         var uriuri = $location.absUrl();
         alert(uriuri.substring(uriuri.indexOf("id_token=")+"id_token=".length,uriuri.indexOf("&state")));
         var storage = 'spablobstorage';
@@ -24,13 +23,14 @@ mainApp.controller('mainCtrl', function ($scope, $location, AzureStorage) {
             if (!checkParameters()) return null;
             var blobUri = 'https://'+ storage +'.blob.core.windows.net/';
             var blobService = AzureStorage.createBlobServiceWithSas(blobUri, sas).withFilter(new AzureStorage.ExponentialRetryPolicyFilter());
+            
             return blobService;
         };
 	
 	var refreshContainer = function () {
 		var blobService = getBlobService();
 		if (!blobService) return;
-
+                alert(blobService);
 		$scope.containers = 'Loading...';
 		blobService.listContainersSegmented(null, function (error, results) {
 			if (error) {
