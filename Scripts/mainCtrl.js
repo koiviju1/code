@@ -22,11 +22,7 @@ mainApp.controller('mainCtrl', function ($scope, $location) {
 	var getBlobService = function () {
 		
             if (!checkParameters()) return null;
-                    var blobUri = 'https://'+ storage +'.blob.core.windows.net/';
-            //var blobUri = 'https://' + $scope.storageAccount + '.blob.core.windows.net/';
-            //var sas = $scope.sasToken;
-
-            alert(blobUri + sas); // tähän asti ok!
+            var blobUri = 'https://'+ storage +'.blob.core.windows.net/';
             var blobService = AzureStorage.createBlobServiceWithSas(blobUri, sas).withFilter(new AzureStorage.ExponentialRetryPolicyFilter());
             return blobService;
         };
