@@ -80,7 +80,7 @@ mainApp.controller('mainCtrl', function ($scope, $location) {
     }
 	
 	var initialize = function(){
-            alert($location.absUrl());
+            var uriuri = $location.absUrl();
             alert(uriuri.substring(uriuri.indexOf("id_token=")+"id_token=".length,uriuri.indexOf("&state")));
             showContainers();
 	};
