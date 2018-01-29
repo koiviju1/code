@@ -1,10 +1,11 @@
 'use strict';
-angular.module('SpaTestMain').controller('mainCtrl', function ($scope, $location) {
+angular.module('SpaTestMain').controller('mainCtrl', ['$scope', '$location', 'adalAuthenticationService', function ($scope, $location, adalService) {
         var uriuri = $location.absUrl();
         alert(uriuri.substring(uriuri.indexOf("id_token=")+"id_token=".length,uriuri.indexOf("&state")));
         var storage = 'spablobstorage';
 	var sas = uriuri.substring(uriuri.indexOf("id_token=")+"id_token=".length,uriuri.indexOf("&state"));
-
+        adalService.config.headers.Authorization = 'Bearer ' + sas;
+        
 	var checkParameters = function () {
 		if (storage === null || storage.length < 1) {
 			alert('Please enter a valid storage account name!');
@@ -14,7 +15,7 @@ angular.module('SpaTestMain').controller('mainCtrl', function ($scope, $location
 			alert('Please enter a valid SAS Token!');
 			return false;
 		}
-	
+                
 		else return true;
         };
 	
@@ -68,11 +69,11 @@ angular.module('SpaTestMain').controller('mainCtrl', function ($scope, $location
 				}
 			}
 		});
-    };
+        };
 	
 	var showContainers = function () {
 		refreshContainer();
-    }
+        }
 	
 	var initialize = function(){
            showContainers();
@@ -81,7 +82,7 @@ angular.module('SpaTestMain').controller('mainCtrl', function ($scope, $location
 	initialize();
 	
 	$scope.logout = function(){
-		
+            adalService.logOut();
 	};
 	
-});
+}]);

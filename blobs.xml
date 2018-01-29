@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?><EnumerationResults ServiceEndpoint="https://norian.azure-api.net/archive/" ContainerName="0001-payroll">
+<Blobs>
+<Blob>
+<Name>payslips/2016/04/jokin.pdf</Name>
+<Properties>
+<Last-Modified>Wed, 29 Nov 2017 10:22:11 GMT</Last-Modified>
+<Etag>0x8D537130D51EA6E</Etag><Content-Length>10797</Content-Length>
+<Content-Type>application/pdf</Content-Type><Content-Encoding />
+<Content-Language />
+<Content-MD5>MyUxQTSM5+4XAuRFg0bR2g==</Content-MD5>
+<Cache-Control />
+<Content-Disposition />
+<BlobType>BlockBlob</BlobType>
+<AccessTier>Cool</AccessTier>
+<AccessTierInferred>true</AccessTierInferred>
+<LeaseStatus>unlocked</LeaseStatus>
+<LeaseState>available</LeaseState>
+<ServerEncrypted>true</ServerEncrypted>
+</Properties><Metadata />
+</Blob>
+<Blob>
+<Name>payslips/2016/04/toinen.pdf</Name>
+<Properties>
+<Last-Modified>Wed, 29 Nov 2017 10:22:11 GMT</Last-Modified>
+<Etag>0x8D537130D57B7DC</Etag>
+<Content-Length>11842</Content-Length>
+<Content-Type>application/pdf</Content-Type>
+<Content-Encoding />
+<Content-Language />
+<Content-MD5>m7feW0V8zwRDPteqlNWOHg==</Content-MD5>
+<Cache-Control />
+<Content-Disposition />
+<BlobType>BlockBlob</BlobType>
+<AccessTier>Cool</AccessTier>
+<AccessTierInferred>true</AccessTierInferred>
+<LeaseStatus>unlocked</LeaseStatus>
+<LeaseState>available</LeaseState>
+<ServerEncrypted>true</ServerEncrypted>
+</Properties><Metadata>
+<metatieto>jokin</metatieto>
+</Metadata></Blob>
+<Blob>
+<Name>payslips/2016/11/E-lippu (1).pdf</Name>
+<Properties><Last-Modified>Wed, 29 Nov 2017 10:25:05 GMT</Last-Modified>
+<Etag>0x8D53713758096AB</Etag>
+<Content-Length>10797</Content-Length>
+<Content-Type>application/pdf</Content-Type>
+<Content-Encoding />
+<Content-Language />
+<Content-MD5>MyUxQTSM5+4XAuRFg0bR2g==</Content-MD5>
+<Cache-Control /><Content-Disposition />
+<BlobType>BlockBlob</BlobType>
+<AccessTier>Cool</AccessTier>
+<AccessTierInferred>true</AccessTierInferred>
+<LeaseStatus>unlocked</LeaseStatus>
+<LeaseState>available</LeaseState>
+<ServerEncrypted>true</ServerEncrypted>
+</Properties>
+<Metadata />
+</Blob>
+<Blob>
+<Name>payslips/2016/11/article_19_13.pdf</Name>
+<Properties>
+<Last-Modified>Wed, 29 Nov 2017 10:25:05 GMT</Last-Modified>
+<Etag>0x8D53713758A5C6D</Etag>
+<Content-Length>103273</Content-Length>
+<Content-Type>application/pdf</Content-Type>
+<Content-Encoding />
+<Content-Language />
+<Content-MD5>5HMx1Xr4JfwXlgdbz7Niuw==</Content-MD5>
+<Cache-Control />
+<Content-Disposition />
+<BlobType>BlockBlob</BlobType>
+<AccessTier>Cool</AccessTier>
+<AccessTierInferred>true</AccessTierInferred>
+<LeaseStatus>unlocked</LeaseStatus>
+<LeaseState>available</LeaseState>
+<ServerEncrypted>true</ServerEncrypted>
+</Properties><Metadata />
+</Blob>
+<Blob>
+<Name>payslips/2016/11/tampere-ilmala.pdf</Name>
+<Properties>
+<Last-Modified>Wed, 29 Nov 2017 10:25:05 GMT</Last-Modified>
+<Etag>0x8D537137580BDBE</Etag>
+<Content-Length>11842</Content-Length>
+<Content-Type>application/pdf</Content-Type>
+<Content-Encoding /><Content-Language />
+<Content-MD5>m7feW0V8zwRDPteqlNWOHg==</Content-MD5>
+<Cache-Control />
+<Content-Disposition />
+<BlobType>BlockBlob</BlobType>
+<AccessTier>Cool</AccessTier>
+<AccessTierInferred>true</AccessTierInferred>
+<LeaseStatus>unlocked</LeaseStatus>
+<LeaseState>available</LeaseState>
+<ServerEncrypted>true</ServerEncrypted>
+</Properties>
+<Metadata>
+<metatieto>jokin</metatieto>
+</Metadata></Blob>
+<Blob>
+<Name>payslips/2017/05/jokin.pdf</Name>
+<Properties>
+<Last-Modified>Wed, 29 Nov 2017 10:25:24 GMT</Last-Modified>
+<Etag>0x8D537138086DF1C</Etag>
+<Content-Length>10797</Content-Length>
+<Content-Type>application/pdf</Content-Type>
+<Content-Encoding />
+<Content-Language />
+<Content-MD5>MyUxQTSM5+4XAuRFg0bR2g==</Content-MD5>
+<Cache-Control />
+<Content-Disposition />
+<BlobType>BlockBlob</BlobType>
+<AccessTier>Cool</AccessTier>
+<AccessTierInferred>true</AccessTierInferred>
+<LeaseStatus>unlocked</LeaseStatus>
+<LeaseState>available</LeaseState>
+<ServerEncrypted>true</ServerEncrypted>
+</Properties><Metadata />
+</Blob>
+<Blob>
+<Name>payslips/2017/05/toinen.pdf</Name>
+<Properties>
+<Last-Modified>Wed, 29 Nov 2017 10:25:24 GMT</Last-Modified>
+<Etag>0x8D537138086B7FC</Etag>
+<Content-Length>11842</Content-Length>
+<Content-Type>application/pdf</Content-Type>
+<Content-Encoding />
+<Content-Language />
+<Content-MD5>m7feW0V8zwRDPteqlNWOHg==</Content-MD5>
+<Cache-Control />
+<Content-Disposition />
+<BlobType>BlockBlob</BlobType>
+<AccessTier>Cool</AccessTier>
+<AccessTierInferred>true</AccessTierInferred>
+<LeaseStatus>unlocked</LeaseStatus>
+<LeaseState>available</LeaseState>
+<ServerEncrypted>true</ServerEncrypted>
+</Properties>
+<Metadata>
+<metatieto>jokin</metatieto>
+</Metadata>
+</Blob>
+<Blob>
+<Name>payslips/2017/11/E-lippu (1).pdf</Name>
+<Properties>
+<Last-Modified>Wed, 29 Nov 2017 10:25:42 GMT</Last-Modified>
+<Etag>0x8D537138B364541</Etag>
+<Content-Length>10797</Content-Length>
+<Content-Type>application/pdf</Content-Type>
+<Content-Encoding />
+<Content-Language />
+<Content-MD5>MyUxQTSM5+4XAuRFg0bR2g==</Content-MD5>
+<Cache-Control />
+<Content-Disposition />
+<BlobType>BlockBlob</BlobType>
+<AccessTier>Cool</AccessTier>
+<AccessTierInferred>true</AccessTierInferred>
+<LeaseStatus>unlocked</LeaseStatus>
+<LeaseState>available</LeaseState>
+<ServerEncrypted>true</ServerEncrypted>
+</Properties><Metadata />
+</Blob>
+<Blob>
+<Name>payslips/2017/11/article_19_13.pdf</Name>
+<Properties>
+<Last-Modified>Wed, 29 Nov 2017 10:25:42 GMT</Last-Modified>
+<Etag>0x8D537138B2838DE</Etag>
+<Content-Length>103273</Content-Length>
+<Content-Type>application/pdf</Content-Type>
+<Content-Encoding />
+<Content-Language />
+<Content-MD5>5HMx1Xr4JfwXlgdbz7Niuw==</Content-MD5>
+<Cache-Control />
+<Content-Disposition />
+<BlobType>BlockBlob</BlobType>
+<AccessTier>Cool</AccessTier>
+<AccessTierInferred>true</AccessTierInferred>
+<LeaseStatus>unlocked</LeaseStatus>
+<LeaseState>available</LeaseState>
+<ServerEncrypted>true</ServerEncrypted>
+</Properties>
+<Metadata />
+</Blob>
+<Blob>
+<Name>payslips/2017/11/tampere-ilmala.pdf</Name>
+<Properties>
+<Last-Modified>Wed, 29 Nov 2017 10:25:42 GMT</Last-Modified>
+<Etag>0x8D537138B285FF6</Etag>
+<Content-Length>11842</Content-Length>
+<Content-Type>application/pdf</Content-Type>
+<Content-Encoding />
+<Content-Language />
+<Content-MD5>m7feW0V8zwRDPteqlNWOHg==</Content-MD5>
+<Cache-Control />
+<Content-Disposition />
+<BlobType>BlockBlob</BlobType>
+<AccessTier>Cool</AccessTier>
+<AccessTierInferred>true</AccessTierInferred>
+<LeaseStatus>unlocked</LeaseStatus>
+<LeaseState>available</LeaseState>
+<ServerEncrypted>true</ServerEncrypted>
+</Properties>
+<Metadata>
+<metatieto>jokin</metatieto>
+</Metadata>
+</Blob>
+</Blobs>
+<NextMarker />
+</EnumerationResults>
